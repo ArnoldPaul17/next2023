@@ -5,6 +5,12 @@ export default function Contacto () {
         <>
             <h1>Estás en contacto</h1>
 
+            <form name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden>
+                <input type="text" name="nombre" />
+                <input type="email" name="email" />
+                <textarea name="comentario"></textarea>
+            </form>
+
             <form method="post" className='formulario'>
                 <label>
                     Nombre:
@@ -18,6 +24,8 @@ export default function Contacto () {
                     Comentarios:
                     <textarea name="comentario"></textarea>
                 </label>
+
+                <input type="hidden" name="form-name" value="contacto" />
 
                 {/*<input type="submit" value="Enviar" />*/}
                 <button type='submit'>Enviar</button>
