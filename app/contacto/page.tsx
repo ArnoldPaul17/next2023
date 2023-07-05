@@ -5,13 +5,13 @@ export default function Contacto () {
         <>
             <h1>Estás en contacto</h1>
 
-            <form name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden>
+            <form action="./contacto/gracias" name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden>
                 <input type="text" name="nombre" />
                 <input type="email" name="email" />
                 <textarea name="comentario"></textarea>
             </form>
 
-            <form action="./contacto/gracias" method="post" className='formulario'>
+            <form method="post" className='formulario'>
                 <label>
                     Nombre:
                     <input type="text" name="nombre" />
